@@ -62,9 +62,9 @@ Write workflows that think using our executable AI reasoning language:
    **For Cursor IDE:**
    ```json
    {
-     "mcp.servers": {
+     "mcpServers": {
        "chordflow": {
-         "url": "https://www.chordflow.ai/api/mcp-sse",
+         "url": "https://app.chordflow.ai/api/mcp-sse",
          "headers": {
            "x-api-key": "your-api-key-here",
            "X-MCP-Agent-Type": "coding"
