@@ -1,0 +1,80 @@
+# Configuration for issue labeler
+# https://github.com/github/issue-labeler
+
+bug:
+  - 'bug'
+  - 'error'
+  - 'crash'
+  - 'broken'
+  - 'not working'
+  - 'issue'
+  - 'problem'
+
+enhancement:
+  - 'feature'
+  - 'enhancement'
+  - 'improvement'
+  - 'request'
+  - 'suggestion'
+  - 'idea'
+
+mcp:
+  - 'mcp'
+  - 'model context protocol'
+  - 'cursor'
+  - 'claude desktop'
+  - 'mcp server'
+  - 'mcp client'
+  - 'connection'
+  - 'integration'
+
+web-app:
+  - 'web app'
+  - 'chordflow.ai'
+  - 'frontend'
+  - 'ui'
+  - 'interface'
+
+api:
+  - 'api'
+  - 'backend'
+  - 'server'
+  - 'endpoint'
+
+knowledge-base:
+  - 'knowledge base'
+  - 'documents'
+  - 'search'
+  - 'research'
+
+project-management:
+  - 'project'
+  - 'task'
+  - 'workflow'
+  - 'management'
+
+documentation:
+  - 'documentation'
+  - 'docs'
+  - 'readme'
+  - 'guide'
+  - 'tutorial'
+
+question:
+  - 'question'
+  - 'help'
+  - 'how to'
+  - 'support'
+
+duplicate:
+  - 'duplicate'
+  - 'duplicated'
+
+wontfix:
+  - 'wontfix'
+  - "won't fix"
+  - 'will not fix'
+
+invalid:
+  - 'invalid'
+  - 'spam'

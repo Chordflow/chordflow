@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ChordFlow Community Discord
+    url: https://discord.gg/a5rSGm8Q
+    about: Join our community for questions and discussions
+  - name: ChordFlow Documentation
+    url: https://www.chordflow.ai/docs
+    about: Check our comprehensive documentation
+  - name: Billing Support
+    url: https://www.chordflow.ai/billing-support
+    about: Get help with billing and account questions

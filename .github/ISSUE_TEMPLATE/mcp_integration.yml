@@ -1,0 +1,127 @@
+name: MCP Integration Issue
+description: Report issues or request help with MCP client integration
+title: "[MCP]: "
+labels: ["mcp", "integration", "triage"]
+assignees:
+  - Chordflow/chordflow-support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Having trouble integrating ChordFlow's MCP server with your MCP client?
+
+        This template is for:
+        - MCP connection issues
+        - Configuration problems
+        - Integration questions
+        - MCP tool functionality issues
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: mcp-client
+    attributes:
+      label: MCP Client
+      description: Which MCP client are you using?
+      options:
+        - Cursor
+        - Claude Desktop
+        - Custom MCP Client
+        - Other (please specify below)
+    validations:
+      required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What kind of issue are you experiencing?
+      options:
+        - Connection/Authentication Issues
+        - Configuration Problems
+        - MCP Tool Not Working
+        - Performance Issues
+        - Documentation/Setup Questions
+        - Feature Request for MCP Integration
+        - Other (please specify below)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: Describe your issue or question in detail.
+      placeholder: |
+        Example: "I'm trying to connect Cursor to ChordFlow's MCP server but getting authentication errors..."
+    validations:
+      required: true
+  - type: textarea
+    id: mcp-config
+    attributes:
+      label: MCP Configuration
+      description: Please share your MCP client configuration (remove any sensitive information like API keys)
+      render: json
+      placeholder: |
+        {
+          "mcpServers": {
+            "chordflow": {
+              "command": "npx",
+              "args": ["-y", "@chordflow/mcp-server"],
+              "env": {
+                "CHORDFLOW_API_KEY": "your-api-key-here"
+              }
+            }
+          }
+        }
+    validations:
+      required: false
+  - type: textarea
+    id: steps-taken
+    attributes:
+      label: Steps Taken
+      description: What have you tried so far?
+      placeholder: |
+        1. Installed MCP client
+        2. Added ChordFlow server to configuration
+        3. Tried to connect...
+    validations:
+      required: false
+  - type: textarea
+    id: error-logs
+    attributes:
+      label: Error Messages/Logs
+      description: Please paste any error messages or relevant log output
+      render: shell
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other details that might help us assist you
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Chordflow/chordflow/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

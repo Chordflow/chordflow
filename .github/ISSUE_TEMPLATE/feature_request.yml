@@ -1,0 +1,106 @@
+name: Feature Request
+description: Suggest an idea for ChordFlow
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees:
+  - Chordflow/chordflow-dev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature for ChordFlow!
+
+        ChordFlow is a web application with an MCP server. Your feature request could be for:
+        - Web app functionality (chordflow.ai)
+        - MCP server capabilities
+        - Integration improvements with MCP clients
+        - API enhancements
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature Area
+      description: Which part of ChordFlow would this feature affect?
+      options:
+        - Web App UI/UX (chordflow.ai)
+        - MCP Server Functionality
+        - MCP Client Integration
+        - Knowledge Base Management
+        - Project Management
+        - Task Management
+        - Document Management
+        - Search & Research
+        - API/Backend
+        - Other (please specify in description)
+    validations:
+      required: true
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: User Type
+      description: Who would primarily benefit from this feature?
+      options:
+        - Individual developers using MCP clients
+        - Teams collaborating on projects
+        - Organizations managing knowledge
+        - MCP client developers/integrators
+        - All users
+        - Other (please specify in description)
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: What problem does this feature solve? What workflow would it improve?
+      placeholder: |
+        Example: "When working in Cursor with ChordFlow's MCP server, I often need to quickly create tasks based on code comments, but currently I have to switch to the web app to do this..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature you'd like to see implemented.
+      placeholder: |
+        Example: "Add an MCP tool that can create tasks directly from code comments or selected text in the editor..."
+    validations:
+      required: true
+  - type: textarea
+    id: mcp-integration
+    attributes:
+      label: MCP Integration Details
+      description: If this involves MCP functionality, describe how it should work with MCP clients.
+      placeholder: |
+        Example: "This could be exposed as a new MCP tool called 'create_task_from_code' that takes selected text and creates a task in the current project..."
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches or workarounds have you considered?
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or examples about the feature request.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Chordflow/chordflow/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

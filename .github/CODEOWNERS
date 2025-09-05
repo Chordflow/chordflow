@@ -1,0 +1,5 @@
+# CODEOWNERS file for ChordFlow repository
+
+# Default owners for all files
+# These teams will be automatically requested for review on all PRs
+* @Chordflow/chordflow-dev @Chordflow/chordflow-support
