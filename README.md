@@ -86,12 +86,6 @@ Write workflows that think using our executable AI reasoning language:
    @chordflow help me implement login functionality
    ```
 
-### Ready-to-Use Templates
-- **Project Kickoff**: Research → planning → task breakdown → team assignment
-- **Code Quality Gate**: Analysis → testing → review → approval → merge
-- **Content Pipeline**: Research → writing → editing → approval → publishing
-- **Data Processing**: Collection → validation → transformation → analysis → reporting
-
 ## 📚 Documentation
 
 - [Getting Started Guide](https://www.chordflow.ai/docs)
